@@ -1,0 +1,41 @@
+{
+  "name": "alfred-sl",
+  "version": "0.0.0",
+  "description": "SL information right there in Alfed.",
+  "license": "MIT",
+  "repository": "AntonNiklasson/alfred-sl",
+  "author": {
+    "name": "Anton Niklasson",
+    "email": "niklasson.anton@gmail.com",
+    "url": "antonniklasson.se"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    ""
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
