@@ -1,7 +1,7 @@
 {
   "name": "alfred-sl",
   "version": "0.0.0",
-  "description": "SL information right there in Alfed.",
+  "description": "SL information in Alfed.",
   "license": "MIT",
   "repository": "AntonNiklasson/alfred-sl",
   "author": {
@@ -24,8 +24,7 @@
   ],
   "keywords": [
     "alfred",
-    "workflow",
-    ""
+    "workflow"
   ],
   "dependencies": {
     "alfy": "^0.6.0"
