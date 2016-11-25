@@ -14,7 +14,7 @@ $ npm install -g alfred-sl
 
 ## Usage
 
-In Alfred, type `sl`, <kbd>Enter</kbd>, and your query.
+In Alfred, type `sl mariatorget` or similar. <kbd>Enter</kbd> to open the real-time view on sl.se
 
 
 ## License
