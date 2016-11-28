@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>41BDDD3E-DA8F-408D-8BBE-8EA1C96AFD8C</string>
+				<string>C0EB647D-6187-460F-B23C-C9C5199AFA67</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -31,19 +31,45 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>sl {query}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
 				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>41BDDD3E-DA8F-408D-8BBE-8EA1C96AFD8C</string>
+			<string>C0EB647D-6187-460F-B23C-C9C5199AFA67</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -100,10 +126,10 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>41BDDD3E-DA8F-408D-8BBE-8EA1C96AFD8C</key>
+		<key>C0EB647D-6187-460F-B23C-C9C5199AFA67</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>190</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
