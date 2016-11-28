@@ -30,6 +30,7 @@
     "alfy": "^0.6.0"
   },
   "devDependencies": {
+    "is-number": "^3.0.0",
     "xo": "^0.16.0"
   },
   "xo": {

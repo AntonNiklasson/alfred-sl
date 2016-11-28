@@ -1,12 +1,17 @@
 const alfy = require('alfy');
+const isNumber = require('is-number');
+const listTrafficTypes = require('./lib/list-traffictypes');
+const searchStation = require('./lib/search-station');
 
-alfy.fetch('sl.se/api/TypeAhead/Find/' + alfy.input)
-	.then(response => {
-		alfy.output(response.data
-			.slice(0, 10)
-			.filter(hit => hit.Type === 'station')
-			.map(hit => ({
-				title: hit.Name,
-				arg: `http://sl.se/#/Realtime/${encodeURIComponent(hit.Name)}/${hit.SiteId}`
-			})));
-	});
+const inputParts = alfy.input.split(' ');
+
+if (inputParts.length === 2 && isNumber(inputParts[0])) {
+	// Station and traffic type is selected.
+	console.log('Should show current data.');
+} else if (inputParts.length === 1 && isNumber(inputParts[0])) {
+	// Station already selected, show traffic types.
+	listTrafficTypes(alfy.input);
+} else {
+	// Search for a station.
+	searchStation(alfy.input);
+}
